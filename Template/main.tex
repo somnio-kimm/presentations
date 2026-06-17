@@ -1,0 +1,181 @@
+\documentclass[xcolor=dvipsnames,aspectratio=169]{beamer}
+\usepackage[utf8]{inputenc}
+\usetheme{Warsaw}
+\usepackage{pgfpages}
+
+% -----------------------------------------------------------------------------
+% Notes toggle
+% Compile with \def\NOTES{} before \input if you want notes-only output.
+% -----------------------------------------------------------------------------
+\newif\ifnotes
+\ifdefined\NOTES\notestrue\fi
+\ifnotes
+  \setbeameroption{show only notes}
+\else
+  \setbeameroption{hide notes}
+\fi
+
+% -----------------------------------------------------------------------------
+% Shared formatting
+% -----------------------------------------------------------------------------
+\input{format}
+
+% -----------------------------------------------------------------------------
+% Presentation metadata
+% Update these for each new talk.
+% -----------------------------------------------------------------------------
+\newcommand{\TalkTitle}{Presentation Title}
+\newcommand{\TalkAuthor}{Your Name}
+\newcommand{\TalkInstitute}{Your Institute}
+\newcommand{\TalkDate}{\today}
+
+\title{\TalkTitle}
+\author{\TalkAuthor}
+\institute{\TalkInstitute}
+\date{\TalkDate}
+
+\begin{document}
+
+% -----------------------------------------------------------------------------
+% Title
+% -----------------------------------------------------------------------------
+\begin{frame}
+    \titlepage
+    \note{
+        Opening remarks.
+        Briefly introduce the topic, motivation, and structure of the talk.
+    }
+\end{frame}
+
+% -----------------------------------------------------------------------------
+% Outline
+% -----------------------------------------------------------------------------
+\begin{frame}{Outline}
+    \tableofcontents
+    \note{
+        Walk the audience through the main sections of the talk.
+    }
+\end{frame}
+
+% -----------------------------------------------------------------------------
+% Section 1
+% -----------------------------------------------------------------------------
+\section{Introduction}
+
+\begin{frame}{Background}
+    \begin{itemize}
+        \item Introduce the problem or topic.
+        \item Explain why it matters.
+        \item Give key definitions or context.
+    \end{itemize}
+    \note{
+        Explain the background in simple terms.
+        Mention why the audience should care.
+    }
+\end{frame}
+
+\begin{frame}{Motivation}
+    \begin{block}{Key Question}
+        What problem are we trying to solve?
+    \end{block}
+
+    \begin{itemize}
+        \item Challenge 1
+        \item Challenge 2
+        \item Challenge 3
+    \end{itemize}
+    \note{
+        Describe the core motivation and main challenges.
+    }
+\end{frame}
+
+% -----------------------------------------------------------------------------
+% Section 2
+% -----------------------------------------------------------------------------
+\section{Main Content}
+\subsection{Method or Theory}
+
+\begin{frame}{Core Idea}
+    The main idea can be summarized as:
+    \[
+        p_{\theta}(x) \approx p(x)
+    \]
+
+    \begin{itemize}
+        \item Explain the formula or concept.
+        \item State important assumptions.
+        \item Connect to intuition.
+    \end{itemize}
+    \note{
+        Explain the equation carefully.
+        Define symbols and give intuition.
+    }
+\end{frame}
+
+\begin{frame}{Example Figure}
+    \begin{figure}
+        \centering
+        \includegraphics[width=0.7\linewidth]{figure/example.png}
+        \caption{Example caption.}
+        \label{fig:example}
+    \end{figure}
+    \note{
+        Explain what the figure shows and what the audience should notice.
+    }
+\end{frame}
+
+\begin{frame}{Example Table}
+    \centering
+    \begin{tabular}{lcc}
+        \toprule
+        Method & Metric 1 & Metric 2 \\
+        \midrule
+        A & 0.90 & 0.80 \\
+        B & 0.93 & 0.85 \\
+        C & 0.95 & 0.88 \\
+        \bottomrule
+    \end{tabular}
+    \note{
+        Highlight the most important comparison rather than reading the table.
+    }
+\end{frame}
+
+% -----------------------------------------------------------------------------
+% Section 3
+% -----------------------------------------------------------------------------
+\section{Conclusion}
+
+\begin{frame}{Summary}
+    \begin{itemize}
+        \item Main takeaway 1
+        \item Main takeaway 2
+        \item Main takeaway 3
+    \end{itemize}
+    \note{
+        Summarize the talk clearly and briefly.
+    }
+\end{frame}
+
+\begin{frame}{Future Work}
+    \begin{itemize}
+        \item Open question 1
+        \item Open question 2
+        \item Possible extension 3
+    \end{itemize}
+    \note{
+        Mention what remains unresolved and possible next steps.
+    }
+\end{frame}
+
+\begin{frame}
+    \centering
+    {\Huge Thank you!}
+
+    \vspace{1em}
+    Questions?
+    \note{
+        Pause and invite questions.
+    }
+\end{frame}
+
+\end{document}

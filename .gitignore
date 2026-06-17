@@ -1,0 +1,33 @@
+# macOS
+.DS_Store
+
+# Reference materials (others' slides, not tracked)
+Content/
+
+# LaTeX build artifacts — compiled PDFs ARE tracked, the junk below is not
+*.aux
+*.bbl
+*.bcf
+*.blg
+*.fdb_latexmk
+*.fls
+*.lof
+*.log
+*.lot
+*.nav
+*.out
+*.run.xml
+*.snm
+*.synctex.gz
+*.toc
+*.vrb
+*.idx
+*.ind
+*.ilg
+*.glo
+*.gls
+*.acn
+*.acr
+*.alg
+*.xdy
+*-notes.log
