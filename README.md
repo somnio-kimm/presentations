@@ -11,6 +11,7 @@ title macros, helpers), a `figure/` directory, and the compiled `main.pdf`.
 | [State-Space Models](State-Space%20Models/main.pdf) | State-space models / SSMs | [PDF](State-Space%20Models/main.pdf) · [source](State-Space%20Models/main.tex) |
 | [Generative Models](Generative%20Models/main.pdf) | Survey of generative modeling families | [PDF](Generative%20Models/main.pdf) · [source](Generative%20Models/main.tex) |
 | [Computer Vision](CV/main.pdf) | Object recognition | [PDF](CV/main.pdf) · [source](CV/main.tex) |
+| [World Models](World%20Models/main.pdf) | Ha & Schmidhuber (2018): architecture, experiments, and recent-model comparison | [PDF](World%20Models/main.pdf) · [speaker notes](World%20Models/main-notes.pdf) · [source](World%20Models/main.tex) |
 
 [`Template/`](Template/) is a blank starting point for new talks.
 
